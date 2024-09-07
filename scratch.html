@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiss Fountain Spring Water</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/gif" href="assets/gifs/spinningearth.gif">
+
     <style>
         /* Resetting default margins and paddings */
         * {
@@ -13,7 +17,7 @@
         }
 
         body {
-            background-image: url('/Users/dgit/Dev/swissfountain.co/images/salazar.gif');
+            background-image: url('images/salazar.gif');
             background-repeat: repeat;
             background-size: auto;
             font-family: "Comic Sans MS", sans-serif;
@@ -73,6 +77,16 @@
             }
         }
 
+        /* Styling for yellow text */
+        .yellow-text {
+            color: yellow;
+        }
+
+        /* Styling for neon green text */
+        .neon-green-text {
+            color: #39FF14; /* Neon green color */
+        }
+
         /* Media Queries for Mobile Phones */
         @media (max-width: 768px) {
             .header h1 {
@@ -114,12 +128,17 @@
 
         /* MC Hammer gif and counter styling */
         .footer-gifs {
-            margin: 20px 0;
+            margin: 40px 0; /* Move the MC Hammer gifs further down */
             text-align: center;
         }
 
         .footer-gifs img {
             margin: 0 10px;
+        }
+
+        .counter-section {
+            margin-top: 50px; /* Adds space above the counter */
+            text-align: center;
         }
 
         .counter {
@@ -137,7 +156,7 @@
         <div class="header">
             <center>
                 <h1>
-                    <img src="/Users/dgit/Dev/swissfountain.co/assets/gifs/7upspot.gif">&nbsp;
+                    <img src="assets/gifs/7upspot.gif">&nbsp;
                     <font color="#FF0000">W</font><font color="#FF5A00">e</font><font color="#FFB400">lc</font><font color="#4Bff00">o</font><font color="#00ff00">me</font><font color="#00ff5A">&nbsp;To </font>
                     <blink><span class="blinking-text"><font color="#00B4ff"> S</font><font color="#005Aff">wi</font><font color="#0000ff">ss</font><font color="#FF00ff">Fo</font><font color="#A500ff">untain</font><font color="#4B00ff">.co</font></span></blink>
                 </h1>
@@ -146,26 +165,40 @@
         </div>
 
         <div class="marquee">
-            <marquee>now with working email!📠 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "most refreshing" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "great mouthfeel" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <marquee>working email soon! 📠 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "most refreshing" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "much taste" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 "wow"
-                </marquee>
+            </marquee>
         </div>
 
         <div class="content">
-            <h1>About Me</h1>
-            <p>Hello! Welcome to my awesome retro website. Stay tuned for updates!</p>
-            <img src="construction.gif" alt="Under Construction">
+            <h1>Story</h1>
+            <p>On a summer holiday in Switzerland, I was captivated by the country's unique relationship with water. From the city-spanning rivers to the public fountains scattered throughout both urban and rural areas, it was clear that water was a vital and integral part of life. In Zurich, I joined locals enjoying the rivers that flow through the city and ran around lakes on farmland situated right next to a friend's modern apartment. In Lugano, I swam in alpine streams, wakeboarded on pristine waters, and drank from the refreshing fountains that adorned the city.
+                Inspired by this, I saw an opportunity to bring the exclusive and revitalizing experience of Swiss water to discerning customers in the U.S.
+            </p>
+            <p>
+                <strong><a href="swiss_trip_pics.html" style="color:#00FF00;">Take a look at my Switzerland trip pics here!</a></strong>
+            </p>
+        </div>
+
+        <!-- "This project is under construction" Section -->
+        <center>
+            <p class="yellow-text">This project is</p>
+            <img src="images/construction_logo.gif" alt="Under Construction">
+        </center>    
+
+        <!-- projected bottled water sales -->
+        <div class="counter-section">
+            <h2 class="neon-green-text">projected sales</h2>
+            <div class="counter">
+                <img src="images/counter2.gif" alt="Website Counter">
+            </div>
         </div>
 
         <!-- Triple MC Hammer gifs and counter -->
         <div class="footer-gifs">
-            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
-            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
-            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
-        </div>
-
-        <div class="counter">
-            <img src="/Users/dgit/Dev/swissfountain.co/images/counter2.gif" alt="Website Counter">
+            <img src="images/mchammer.gif" alt="MC Hammer">
+            <img src="images/mchammer.gif" alt="MC Hammer">
+            <img src="images/mchammer.gif" alt="MC Hammer">
         </div>
     </div>
 
