@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Trip Photos</title>
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('/Users/dgit/Dev/swissfountain.co/images/salazar.gif');
+            background-repeat: repeat;
+            background-size: auto;
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px; /* Restrict the width of the container */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 2em;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Space between photos */
+            padding: 10px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            border: 5px solid black; /* Black outlining around photos */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Retro shadow effect */
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #39FF14; /* Neon green for link */
+            font-size: 1.5em;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Mobile Phones */
+        @media (max-width: 768px) {
+            .photo-grid {
+                grid-template-columns: 1fr; /* Switch to one column on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Trip Photos =]</h1>
+        </div>
+
+        <div class="photo-grid">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/1.jpeg" alt="Photo 1">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/2.jpeg" alt="Photo 2">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/3.jpeg" alt="Photo 3">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/4.jpeg" alt="Photo 4">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/5.jpeg" alt="Photo 5">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/trip_pics/6.jpeg" alt="Photo 6">
+        </div>
+
+        <div class="back-link">
+            <a href="/Users/dgit/Dev/swissfountain.co/index.html">⬅ Back to Swiss Fountain</a>
+        </div>
+    </div>
+
+</body>
+</html>

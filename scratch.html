@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Fountain Spring Water</title>
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('/Users/dgit/Dev/swissfountain.co/images/salazar.gif');
+            background-repeat: repeat;
+            background-size: auto;
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px; /* Restrict the width of the container */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .content {
+            padding: 10px;
+            background-color: #ffffff;
+            border: 2px solid #ff6600;
+        }
+
+        .marquee {
+            font-size: 1.5em;
+            color: #ff0000;
+            background-color: #ffff00;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-audio {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        audio {
+            height: 30px;
+        }
+
+        /* CSS Flashing Effect with Instant On/Off Blink */
+        .blinking-text {
+            animation: blink-animation 2s steps(1, start) infinite; /* Instant blink */
+        }
+
+        @keyframes blink-animation {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Media Queries for Mobile Phones */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em; /* Adjust font size for smaller screens */
+            }
+
+            .content {
+                padding: 15px;
+                font-size: 1em;
+            }
+
+            .marquee {
+                font-size: 1.2em;
+            }
+
+            .footer-audio {
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.2em; /* Further adjustment for very small screens */
+            }
+
+            .content {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .marquee {
+                font-size: 1em;
+            }
+
+            .footer-audio {
+                padding: 5px;
+            }
+        }
+
+        /* MC Hammer gif and counter styling */
+        .footer-gifs {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .footer-gifs img {
+            margin: 0 10px;
+        }
+
+        .counter {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+    <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+    <script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+</head>
+<body>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="header">
+            <center>
+                <h1>
+                    <img src="/Users/dgit/Dev/swissfountain.co/assets/gifs/7upspot.gif">&nbsp;
+                    <font color="#FF0000">W</font><font color="#FF5A00">e</font><font color="#FFB400">lc</font><font color="#4Bff00">o</font><font color="#00ff00">me</font><font color="#00ff5A">&nbsp;To </font>
+                    <blink><span class="blinking-text"><font color="#00B4ff"> S</font><font color="#005Aff">wi</font><font color="#0000ff">ss</font><font color="#FF00ff">Fo</font><font color="#A500ff">untain</font><font color="#4B00ff">.co</font></span></blink>
+                </h1>
+                <p class="lead">The premiere destination for Swiss drinking water</p>
+            </center>    
+        </div>
+
+        <div class="marquee">
+            <marquee>now with working email!📠 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "most refreshing" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "great mouthfeel" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                "wow"
+                </marquee>
+        </div>
+
+        <div class="content">
+            <h1>About Me</h1>
+            <p>Hello! Welcome to my awesome retro website. Stay tuned for updates!</p>
+            <img src="construction.gif" alt="Under Construction">
+        </div>
+
+        <!-- Triple MC Hammer gifs and counter -->
+        <div class="footer-gifs">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/mchammer.gif" alt="MC Hammer">
+        </div>
+
+        <div class="counter">
+            <img src="/Users/dgit/Dev/swissfountain.co/images/counter2.gif" alt="Website Counter">
+        </div>
+    </div>
+
+    <!-- Legacy Support for Autoplay using bgsound and embed -->
+    <embed type="application/x-mplayer2" src="https://web.archive.org/web/20190221154702im_/http://www.salazarla.com/midi/haddawawy.mp3" height="0" width="0" autostart="1">
+    <noembed><bgsound src="https://web.archive.org/web/20190221154702im_/http://www.salazarla.com/midi/haddawawy.mp3" loop="-1"></noembed>
+
+    <!-- Audio Player at Bottom of Page (Optional for Modern Browsers) -->
+    <div class="footer-audio">
+        <audio controls autoplay loop>
+            <source src="https://web.archive.org/web/20190221154702im_/http://www.salazarla.com/midi/haddawawy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+</body>
+</html>
